@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,9 +15,9 @@
     <body>
         <h1>Simple Note Keeper</h1>
         <h2>View Note</h2>
-        <b>Title:</b> <br><br>
-        <b>Contents:</b><br>
-        <br>
+        <p><b>Title:</b> ${note.title}</p>
+        <p><b>Contents:</b><br>
+            ${note.contents}</p>
         <a href="note?edit">Edit</a>
     </body>
 </html>
